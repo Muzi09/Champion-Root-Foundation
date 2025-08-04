@@ -23,6 +23,7 @@ import {
   IconSettings,
   IconUsers,
 } from "@tabler/icons-react"
+import Image from "next/image";
 
 import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
@@ -81,9 +82,15 @@ export function AppSidebar({
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5">
+            <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5 relative right-2">
               <a href="#">
-                <IconInnerShadowTop className="!size-5" />
+                <Image
+                  src="/logo.png"
+                  alt="Champion Root Foundation Logo"
+                  width={120}
+                  height={120}
+                  className="!size-10"
+                />
                 <span className="text-base font-semibold">Champion Root Foundation</span>
               </a>
             </SidebarMenuButton>
