@@ -29,7 +29,7 @@ export default function HomePage() {
         }
     }, []);
 
-    React.useEffect(() => {
+    React.useEffect(() => { 
         if (menuOpen || showPopup) {
             document.body.classList.add('overflow-hidden');
         } else {
@@ -75,7 +75,7 @@ export default function HomePage() {
                 {/* Logo on left */}
                 <div className="flex items-center">
                     <Image
-                        src="/logo.png"
+                        src="/Logo.png"
                         alt="ISPL Logo"
                         width={50}
                         height={50}
@@ -103,7 +103,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-between mb-6 border-b pb-4 pt-4 px-1 bg-blue-900">
                     <div className="flex items-center">
                         <Image
-                            src="/logo.png"
+                            src="/Logo.png"
                             alt="ISPL Logo"
                             width={50} // Match header logo size
                             height={50}
